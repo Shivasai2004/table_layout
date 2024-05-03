@@ -1,0 +1,5 @@
+<!-- table_bg.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/table_bg_color" />
+    <corners android:radius="8dp" />
+</shape>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Horizontal ScrollView to contain the TableLayout -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Vertical ScrollView to contain the TableLayout -->
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- TableLayout to display the data -->
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_bg">
+
+                <!-- Header Row -->
+                <TableRow
+                    android:background="@color/header_bg_color">
+
+                    <TextView
+                        android:text="Regd. No."
+                        android:padding="8dp"
+                        android:textColor="@color/header_text_color"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="Name"
+                        android:padding="8dp"
+                        android:textColor="@color/header_text_color"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="Year"
+                        android:padding="8dp"
+                        android:textColor="@color/header_text_color"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="Section"
+                        android:padding="8dp"
+                        android:textColor="@color/header_text_color"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="Dept"
+                        android:padding="8dp"
+                        android:textColor="@color/header_text_color"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="Branch"
+                        android:padding="8dp"
+                        android:textColor="@color/header_text_color"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <!-- Rows for student data will be dynamically added here -->
+
+            </TableLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+</RelativeLayout>
